@@ -192,29 +192,27 @@ int main()
 		switch(sel)
  		{
 			case 1:
-  				printList();
+  				InsertionSort(A,n);
+				printArray(A,n);
   				break;
-  				
 			case 2:
-  				editStud();
+  				SelectionSort(A,n);
+				printArray(A,n);
   				break;
-
 			case 3:
-  				delStud();
-  		
+  				MergeSort(A,n);
+				printArray(A,n);
   				break;
-
 			case 4:
-				addStud();
+				QuickSort(A,0,n-1);
+				printArray(A,n);
   				break;
-
 			case 5:
-  				
+  				HeapSort(A,n);
+				printArray(A,n);
 				break;
-			
 			case 6:
 				return 0;
-			
 			default:
   				printf("That is not a valid selection!\n");
   		}
@@ -237,7 +235,7 @@ int main()
 	//MergeSort(A,n);
 	//InsertionSort(A,n);
 	//QuickSort(A,0,n-1);
-	printArray(A,n);
+	//printArray(A,n);
 		
 	return 0;
 }
