@@ -178,6 +178,14 @@ int main()
 	char ch;
 	do
 	{
+		printf("Enter the size of Array : ");
+		scanf("%d",&n);
+		//n++;
+		A=(int *)malloc(n*sizeof(int));
+		printf("Enter the elements of Array to sort :\n");
+		for(i=0;i<n;i++)
+		scanf("%d",&A[i]);
+	
 		printf("Select the type of sorting:\n");
 		printf("1-Insertion Sort\n");
 		printf("2-Selection Sort\n");
@@ -216,21 +224,10 @@ int main()
 			default:
   				printf("That is not a valid selection!\n");
   		}
-		
+		printf("To continue enter (Y/y):");
+		scanf("%c",&ch);	
 	}while(ch=='Y'||ch=='y');
-	printf("Enter the size of Array : ");
-	scanf("%d",&n);
-	//n++;
-	A=(int *)malloc(n*sizeof(int));
-	printf("Enter the elements of Array to sort :\n");
-	for(i=0;i<n;i++)
-		scanf("%d",&A[i]);
-	
-	
-	
-	
 	//SelectionSort(A,n);
-	
 	//HeapSort(A,n);
 	//MergeSort(A,n);
 	//InsertionSort(A,n);
