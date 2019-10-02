@@ -224,8 +224,9 @@ int main()
 			default:
   				printf("That is not a valid selection!\n");
   		}
-		printf("To continue enter (Y/y):");
-		scanf("%c",&ch);	
+		printf("\nTo continue enter (Y/y):");
+  		fflush(stdin);
+  		scanf("%c",&ch);	
 	}while(ch=='Y'||ch=='y');
 
 	return 0;
