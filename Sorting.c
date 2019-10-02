@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include<stdlib.h>
-#define M 9
+#define M 50
 
 void printArray(int A[], int n)
 {
@@ -227,13 +227,7 @@ int main()
 		printf("To continue enter (Y/y):");
 		scanf("%c",&ch);	
 	}while(ch=='Y'||ch=='y');
-	//SelectionSort(A,n);
-	//HeapSort(A,n);
-	//MergeSort(A,n);
-	//InsertionSort(A,n);
-	//QuickSort(A,0,n-1);
-	//printArray(A,n);
-		
+
 	return 0;
 }
 
