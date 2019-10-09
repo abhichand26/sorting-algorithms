@@ -2,6 +2,11 @@
 #include<stdlib.h>
 #define M 50
 
+/*
+** Program to sort elements of array using Bubble, Selection, Insertion, Merge, Quick and Heap Sort
+** Made by - Abhishek Chand
+*/
+
 void printArray(int A[], int n)
 {
 	int i;
